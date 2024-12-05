@@ -1,4 +1,5 @@
 import torch
-import re
+import os
 
-print(torch.__version__)
+print(f'torch: {torch.__version__}')
+

@@ -7,9 +7,8 @@ from ds import ListDataset
 
 
 
-
 class IMDB():
-    def __init__(self, device = 'cpu'):
+    def __init__(self, device = torch.device("cpu")):
         self.device = device
         self.vocab = None
         self.x_train = None

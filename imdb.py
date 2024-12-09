@@ -3,7 +3,7 @@ import torch.nn as nn
 from keras.datasets import imdb
 from torch.utils.data import DataLoader, Dataset, TensorDataset
 from torch.utils.data.dataset import random_split
-from data.ds import ListDataset
+from ds import ListDataset
 
 
 device = 'cpu'

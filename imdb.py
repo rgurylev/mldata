@@ -37,7 +37,7 @@ class IMDB():
             processed_text = torch.tensor(_text, dtype=torch.int64)
             text_list.append(processed_text)
             lengths.append(processed_text.size(0))
-        label_list = torch.tensor(label_list).float()
+        label_list = torch.tensor(label_list, dtype=torch.float32)
         lengths = torch.tensor(lengths)
         padded_text_list = nn.utils.rnn.pad_sequence(
             text_list, batch_first=True)
